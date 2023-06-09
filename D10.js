@@ -371,19 +371,19 @@ console.log(deleteProp(io, "cellulare"))
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
 
-const newestMovie = function (array) {
-  let result = { Year: 2100 }
-  array.forEach((movie) => {
-    let currentYear = parseInt(movie.Year)
-    if (currentYear > result.Year) {
-      result = movie
+const newestMovie = (array = movies) => {
+  let latestMovieYear = Number(array[0].Year)
+  array.forEach(movie => movie.Year = Number(movie.Year))
+  array.forEach(movie => {
+    if(latestMovieYear < movie.Year) {
+      latestMovieYear = movie.Year
     }
   })
-
-  return result
+  console.log("Last movie is", array.find(movie => movie.Year === latestMovieYear))
 }
 
-console.log(newestMovie(movies))
+newestMovie()
+
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
