@@ -352,10 +352,12 @@ const movies = [
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 
-const deleteProp = (obj, string) => {
-  delete obj[string]
-  return obj
+const io = {nome: "Aldo", cognome: "Altomare", certificati: "SQL", cellulare: "3395243200" }  
+const deleteProp = function(oggetto,stringa){
+  delete oggetto[stringa]
+  return oggetto
 }
+console.log(deleteProp(io, "cellulare"))
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
@@ -402,13 +404,11 @@ console.log("Ecco gli anni dei film ", onlyTheYears());
 Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
 
-const onlyInTheLastMillennium = function(){
-  
-  onlyTheYears.filter(onlyTheYears => onlyTheYears.anno >= 2000)
-  
-}
-
-console.log("Film del nuovo millennio", onlyTheYears());
+// const onlyInTheLastMillennium = function(){
+//   let anniFilm2 = movies.map((anni) => {
+//     return anni.Year.filter(parseInt(anni.Year) > 2000})
+//   }
+//   return anni
 
 
 /* ESERCIZIO 16
@@ -541,7 +541,8 @@ locationLista.removeChild(nuovoElemento)
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
-
+const allTrs = document.getElementsByClassName("tr")
+let newClass = document.c
 
 // [EXTRA] JS Avanzato
 
