@@ -138,7 +138,15 @@ console.log(onlyLetters("In un campo di calcio ci sono 22 calciatori"))
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+const isThisAnEmail = function(string) {
+  if(string.includes("@") && string.includes(".com") && string.indexOf(".") > string.indexOf("@")  || string.includes("@") && string.includes(".it") && string.indexOf(".") > string.indexOf("@"))
+  {console.log(true)}
+  else{
+    console.log(false)
+  }
+}
 
+isThisAnEmail("aldoaltomare91@gmail.com")
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
