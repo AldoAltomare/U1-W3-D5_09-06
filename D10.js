@@ -556,7 +556,7 @@ backgroundRed()
 const locationLista = document.getElementById('myList')
 let nuovoElemento = document.createElement('li')
 
-locationLista.appendChild(nuovoElemento)
+locationLista.appendChild(nuovoElemento) // visibile se commento esercizio successivo
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
