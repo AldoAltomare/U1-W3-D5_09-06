@@ -73,7 +73,7 @@ console.log(me)
 */
 
 const dice = function(){
-result = Math.floor(Math.random()*7)
+result = Math.floor(Math.random()*6 +1) // senza il +1 comprende lo 0
 return result
 }
 console.log(dice())
@@ -92,7 +92,7 @@ const whoIsBigger = function (a,b){
   }
 }
 
-console.log(whoIsBigger(5,4))
+console.log(whoIsBigger(3,3))
 
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
