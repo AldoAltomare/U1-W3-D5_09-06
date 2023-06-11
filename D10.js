@@ -56,7 +56,7 @@ console.log(me)
 Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
 
-me.skills.push("css")
+me.skills.push("css") // visibile in console se commento esercizio successivo
 console.log(me)
 
 /* ESERCIZIO G
@@ -429,15 +429,6 @@ console.log(onlyInTheLastMillennium())
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
-
-// const sumAllTheYears = function(array) {
-//   return  array.reduce((x,y)=>{
-//    return  x + Number(y.Year),0
-//    })
-// }
-
-// console.log(sumAllTheYears(movies))
-
 
 const sumOfAllYears = function(){
   const sum = movies.reduce((acc, currentValue) => {
