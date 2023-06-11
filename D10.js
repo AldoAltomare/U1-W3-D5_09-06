@@ -112,14 +112,14 @@ console.log(splitMe("I love Coding even if I am still not very good at it"))
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
 
-const deleteOne = function(string,boolean){
-  if(boolean == true){
+const deleteOne = function(string,Boolean){
+  if(Boolean == true){
     return string.slice(1)
   }else{
     return string.slice(0,-1)
   }
 }
-console.log(deleteOne('Testiamo i falsies',7))
+console.log(deleteOne('Testiamo i falsies', 7))
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
@@ -140,13 +140,13 @@ console.log(onlyLetters("In un campo di calcio ci sono 22 calciatori"))
 
 const isThisAnEmail = function(string) {
   if(string.includes("@") && string.includes(".com") && string.indexOf(".") > string.indexOf("@")  || string.includes("@") && string.includes(".it") && string.indexOf(".") > string.indexOf("@"))
-  {console.log(true)}
+  {console.log("questa è un'email")}
   else{
-    console.log(false)
+    console.log("questa non mi sembra un'email")
   }
 }
 
-isThisAnEmail("aldoaltomare91@gmail.com")
+isThisAnEmail("aldoaltomare91@gmail.it") // funziona solo per .com e .it :)
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
@@ -184,7 +184,7 @@ const rollTheDices = function(n){
   }
   return obj
 }
-console.log(rollTheDices(5))
+console.log(rollTheDices(4))
 
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
@@ -205,7 +205,7 @@ function howManyDays(date) {
 
 const myDate = new Date(1991, 12, 23);
 const daysPassed = howManyDays(myDate);
-console.log("Giorni trascorsi:", daysPassed);
+console.log("Aldo è nato", daysPassed, "giorni fa");
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
