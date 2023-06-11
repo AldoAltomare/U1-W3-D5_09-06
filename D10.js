@@ -21,7 +21,7 @@ console.log(sum)
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
 
-const random = Math.random()*20
+const random = Math.floor(Math.random()*20)
 
 console.log(random)
 
@@ -229,7 +229,6 @@ function isTodayMyBirthday() {
   }
 }
 
-// Esempio di utilizzo
 const todayIsMyBirthday = isTodayMyBirthday();
 console.log("Is Today My Birthday?", todayIsMyBirthday);
 
