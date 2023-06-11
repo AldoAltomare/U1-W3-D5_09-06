@@ -493,8 +493,12 @@ console.log(removeIndex(2))
 */
 
 const selectContainer = function() {
-  let container = document.getElementById("container")
+  let container = document.getElementById('container')
+  container.style.backgroundColor="blue"
+  return
 }
+
+selectContainer()
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
