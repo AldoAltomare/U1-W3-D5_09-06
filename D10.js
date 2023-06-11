@@ -412,12 +412,19 @@ console.log("Ecco gli anni dei film ", onlyTheYears());
 Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
 
-// const onlyInTheLastMillennium = function(){
-//   let anniFilm2 = movies.map((anni) => {
-//     return anni.Year.filter(parseInt(anni.Year) > 2000})
-//   }
-//   return anni
+const onlyInTheLastMillennium = function(){
+  let newMovies = movies.filter(movie => {
+    if(parseInt(movie.Year) >= 2000){
+      return true
+    }else{
+      return false
+    }
+  })
 
+  return newMovies
+}
+
+console.log(onlyInTheLastMillennium())
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
@@ -581,4 +588,3 @@ let newClass = document.c
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
-
