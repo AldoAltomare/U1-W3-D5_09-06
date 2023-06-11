@@ -101,7 +101,7 @@ console.log(whoIsBigger(3,3))
 */
 
 const splitMe = function (a) {
-  result = a.split(" ")
+  result = a.split(" ") // senza spazio tra le virgolette avrebbe diviso ogni lettera/carattere
   return result
 };
 
