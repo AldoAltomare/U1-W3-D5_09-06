@@ -113,13 +113,13 @@ console.log(splitMe("I love Coding even if I am still not very good at it"))
 */
 
 const deleteOne = function(string,boolean){
-  if(boolean === true){
-    return string.slice(0,-1)
-  }else{
+  if(boolean == true){
     return string.slice(1)
+  }else{
+    return string.slice(0,-1)
   }
 }
-console.log(deleteOne('Hola',false))
+console.log(deleteOne('Testiamo i falsies',7))
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
