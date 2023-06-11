@@ -495,7 +495,6 @@ console.log(removeIndex(2))
 const selectContainer = function() {
   let container = document.getElementById('container')
   container.style.backgroundColor="blue"
-  return
 }
 
 selectContainer()
@@ -505,12 +504,21 @@ selectContainer()
 */
 
 const selectTagTd = function() {
-  let Tds = document.getElementsByTagName("td")
+  let Tds = document.querySelectorAll("td")
   console.log(Tds)
-  return Tds
 }
 
 selectTagTd()
+
+const backgroundGreen = function(){
+  const tableElements = document.querySelectorAll("td")
+  tableElements.forEach((el)=>{
+    el.style.backgroundColor = 'green'
+    return
+  })
+}
+
+backgroundGreen()
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
