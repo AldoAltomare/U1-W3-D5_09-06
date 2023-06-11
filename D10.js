@@ -568,8 +568,12 @@ locationLista.removeChild(nuovoElemento)
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
-const allTrs = document.getElementsByClassName("tr")
-let newClass = document.c
+const allTrs = document.querySelectorAll("tr");
+allTrs.forEach((el) =>{
+  el.classList.add("secondaClasse")
+})
+
+console.log(allTrs)
 
 // [EXTRA] JS Avanzato
 
